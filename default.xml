@@ -341,7 +341,7 @@
   <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="comp" revision="master" />
   <project path="packages/apps/HALO" name="android_packages_apps_HALO" remote="comp" revision="cm-11.0" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="ls" revision="kitkat" />
-  <project path="packages/apps/KernelTweaker" name="android_packages_apps_KernelTweaker" remote="ls" revision="kitkat" />
+  <project path="packages/apps/KernelTweaker" name="android_packages_apps_KernelTweaker" remote="comp" revision="kitkat" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/LiquidFileManager" name="android_packages_apps_LiquidFileManager" remote="ls" revision="kitkat" />
   <project path="packages/apps/LiquidStartupService" name="android_packages_apps_LiquidStartupService" remote="ls" revision="kitkat" />
