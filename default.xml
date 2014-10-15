@@ -18,6 +18,9 @@
 
   <remote  name="ls"
            fetch="https://github.com/LiquidSmooth/" />
+           
+   <remote name="comp"
+           fetch="https://github.com/7comp/" />
 
   <remote  name="sr"
            fetch="git://github.com/SlimRoms/" />
@@ -30,11 +33,11 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="build" name="android_build" remote="ls" revision="kitkat">
+  <project path="build" name="android_build" remote="comp" revision="kitkat">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="android" name="android" remote="ls" revision="kitkat" />
+  <project path="android" name="android" remote="comp" revision="kitkat" />
   <project path="art" name="android_art" remote="ls" revision="kitkat" />
   <project path="bionic" name="android_bionic" remote="ls" revision="kitkat" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
@@ -261,7 +264,7 @@
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ls" revision="kitkat" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="ls" revision="kitkat3" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="comp" revision="kitkat3" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" remote="ln" revision="linaro_android_4.4.4" />
@@ -316,6 +319,7 @@
   <project path="libcore" name="android_libcore" remote="ls" revision="kitkat" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
+  <project path="packages/apps/alogcat" name="alogcat" remote="comp" revision="master" />
   <project path="packages/apps/Apollo" name="omnirom/android_packages_apps_Apollo" remote="gh" revision="android-4.4" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cm" revision="cm-11.0" />
@@ -326,14 +330,16 @@
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
-  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="sr" revision="kk4.4" />
-  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="sr" revision="kk4.4" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="comp" revision="kk4.4" />
+  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="comp" revision="kk4.4" />
   <project path="packages/apps/DashClock" name="packages_apps_DashClock" remote="sr" revision="kk4.4" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="sr" revision="kk4.4" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="ls" revision="kitkat" />
   <project path="packages/apps/Email" name="packages_apps_Email" remote="sr" revision="kk4.4" />
   <project path="packages/apps/Exchange" name="packages_apps_Exchange" remote="sr" revision="kk4.4" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="sr" revision="kk4.4" />
+  <project path="packages/apps/GPSOptimizer" name="android_packages_apps_GPSOptimizer" remote="comp" revision="master" />
+  <project path="packages/apps/HALO" name="android_packages_apps_HALO" remote="comp" revision="cm-11.0" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="ls" revision="kitkat" />
   <project path="packages/apps/KernelTweaker" name="android_packages_apps_KernelTweaker" remote="ls" revision="kitkat" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
@@ -342,15 +348,16 @@
   <project path="packages/apps/LiquidStats" name="android_packages_apps_LiquidStats" remote="ls" revision="kitkat" />
   <project path="packages/apps/LiquidLauncher" name="android_packages_apps_LiquidLauncher" remote="ls" revision="kitkat" />
   <project path="packages/apps/LiquidUpdater" name="android_packages_apps_LiquidUpdater" remote="ls" revision="kitkat" />
-  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="comp" revision="cm-11.0" />
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="ls" revision="kitkat"/>
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="ls" revision="kitkat" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
-  <project path="packages/apps/PackageInstaller" name="Mahdi-Rom/android_packages_apps_PackageInstaller" remote="gh" revision="kk-4.4.3" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="comp" revision="android-4.4" />
+  <project path="packages/apps/PerformanceControl" name="android_packages_apps_PerformanceControl" remote="comp" revision="kk" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Provision" name="packages_apps_Provision" remote="sr" revision="kk4.4" />
-  <project path="packages/apps/ScreenRecorder" name="android_packages_apps_ScreenRecorder" remote="ls" revision="kitkat" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ls" revision="kitkat3" />
+  <project path="packages/apps/ScreenRecorder" name="android_packages_apps_ScreenRecorder" remote="comp" revision="kitkat" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="comp" revision="kitkat3" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" remote="cm" revision="cm-11.0" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
@@ -420,7 +427,7 @@
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/liquid" name="android_vendor_liquid" remote="ls" revision="kitkat" >
+  <project path="vendor/liquid" name="android_vendor_liquid" remote="comp" revision="kitkat" >
     <copyfile src="tools/build-liquid.sh" dest="build-liquid.sh" />
   </project>
 
